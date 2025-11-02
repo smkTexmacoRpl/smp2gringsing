@@ -28,6 +28,8 @@ Route::get('/', function () {
 Route::get('/galeri', [App\Http\Controllers\GaleriController::class, 'index'])->name('galeri.index');
 Route::get('/visi_misi', [App\Http\Controllers\ProfilController::class, 'index'])->name('visi-misi');
 Route::get('/detail_berita', [App\Http\Controllers\BlogController::class, 'index'])->name('detail-berita');
+Route::get('/sejarah', [App\Http\Controllers\ProfilController::class, 'sejarah'])->name('sejarah');
+Route::get('/struktur_organisasi', [App\Http\Controllers\ProfilController::class, 'struktur'])->name('struktur-organisasi');
 
 
 
@@ -56,6 +58,9 @@ Route::middleware(['auth'])->prefix('admin')->group(function () {
  Route::get('/profil-sekolah', function () {
   return view('admin.webconfig.profile-sekolah');
  })->name('admin.profil-sekolah');
+ Route::get('/guru', function () {
+  return view('admin.webconfig.guru');
+ })->name('admin.guru');
 
  Route::get('/prakata', function () {
   return view('admin.webconfig.prakata');

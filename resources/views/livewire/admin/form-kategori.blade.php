@@ -1,4 +1,4 @@
-< <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
+<div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 z-50">
     <div class="bg-white rounded-lg w-1/3 p-6">
         <h2 class="text-lg font-bold mb-4">
             {{ $kategoriId ? 'Edit Kategori' : 'Tambah Kategori' }}

@@ -32,8 +32,10 @@
         <a href="{{ route('admin.profil-sekolah') }}" wire:navigate
           class="block px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">Profil
           Sekolah</a>
+        <a href="{{ route('admin.guru') }}" wire:navigate
+          class="block px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">Guru</a>
         <a href="{{ route('admin.prakata') }}" wire:navigate
-          class="block px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">prakata</a>
+          class="block px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">Prakata</a>
         <a href="{{ route('admin.menu') }}" wire:navigate
           class="block px-4 py-2 text-sm text-gray-600 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700">Menu</a>
         <a href="{{ route('admin.counter') }}" wire:navigate
@@ -92,10 +94,17 @@
       <span>Laporan</span>
     </a>
 
-    <a href="#"
+    <a href="{{ route('logout') }}" onclick="event.preventDefault();
+                                 document.getElementById('logout-form').submit();"
       class="flex items-center px-4 py-3 text-gray-700 dark:text-gray-300 hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors">
       <i class="fas fa-cog mr-3"></i>
       <span>Logout</span>
+
+      <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
+        @csrf
+      </form>
+
+
 
     </a>
   </nav>

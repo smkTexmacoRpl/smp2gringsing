@@ -9,4 +9,4 @@ Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 Route::get('registration', [AuthController::class, 'registration'])->name('register');
 Route::post('post-registration', [AuthController::class, 'postRegistration'])->name('register.post');
-Route::get('dashboard', [AuthController::class, 'dashboard']);
+Route::get('dashboard', [AuthController::class, 'dashboard'])->name('admin.dashboard');

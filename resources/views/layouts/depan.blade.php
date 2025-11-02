@@ -7,6 +7,7 @@
   <title>{{ $appName2 }}</title>
   @vite('resources/css/app.css')
   @vite('resources/js/app.js')
+  @livewireStyles
 
   <!-- Tailwind CSS v3.4 -->
   @include('layouts.partial.style')
@@ -163,6 +164,7 @@ goToSlide(newSlide);
 // Ganti slide setiap 5 detik
 setInterval(nextSlide, 5000);
   </script> --}}
+  @stack('scripts')
 </body>
 
 </html>

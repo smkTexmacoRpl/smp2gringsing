@@ -62,7 +62,7 @@ class AuthController extends Controller
 
         Auth::login($user);
 
-        return redirect("dashboard")->withSuccess('Great! You have Successfully loggedin');
+        return redirect("admin.dashboard")->withSuccess('Great! You have Successfully loggedin');
     }
     public function create(array $data): User
     {

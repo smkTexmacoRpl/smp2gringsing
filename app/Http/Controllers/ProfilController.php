@@ -20,9 +20,9 @@ class ProfilController extends Controller
     /**
      * Show the form for creating a new resource.
      */
-    public function create()
+    public function struktur()
     {
-        //
+        return view('front.strukturOrganisasi');
     }
 
     /**
