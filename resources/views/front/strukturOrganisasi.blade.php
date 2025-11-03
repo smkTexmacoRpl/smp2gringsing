@@ -2,7 +2,7 @@
 @section('title', 'Struktur Organisasi')
 @section('content')
 
-<div class="min-h-screen mt-[5%] bg-gray-150 ">
+<div class="min-h-screen mt-[8%] bg-white ">
     <section class="max-w-7xl mx-auto px-4 py-12">
         <h2 class="text-3xl font-bold text-center mb-10">
             Struktur Organisasi SMP Negeri 2 Gringsing

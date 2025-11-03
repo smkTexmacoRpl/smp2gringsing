@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Prakata;
 use Illuminate\Http\Request;
 use App\Models\ProfilSekolah as Profil;
 
@@ -28,9 +29,10 @@ class ProfilController extends Controller
     /**
      * Store a newly created resource in storage.
      */
-    public function store(Request $request)
+    public function prakata()
     {
-        //
+        $prakata = Prakata::first();
+        return view('front.prakata', compact('prakata'));
     }
 
     /**

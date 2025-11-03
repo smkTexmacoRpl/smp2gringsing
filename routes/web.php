@@ -27,6 +27,8 @@ Route::get('/', function () {
 })->name('home');
 Route::get('/galeri', [App\Http\Controllers\GaleriController::class, 'index'])->name('galeri.index');
 Route::get('/visi_misi', [App\Http\Controllers\ProfilController::class, 'index'])->name('visi-misi');
+Route::get('/prakata', [App\Http\Controllers\ProfilController::class, 'prakata'])->name('prakata');
+
 Route::get('/detail_berita', [App\Http\Controllers\BlogController::class, 'index'])->name('detail-berita');
 Route::get('/sejarah', [App\Http\Controllers\ProfilController::class, 'sejarah'])->name('sejarah');
 Route::get('/struktur_organisasi', [App\Http\Controllers\ProfilController::class, 'struktur'])->name('struktur-organisasi');
