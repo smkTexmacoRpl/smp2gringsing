@@ -50,10 +50,10 @@
 
 
         <!-- Modal -->
-        @if($isOpenModal)
+        @if($isModalOpen)
         <div class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-40 z-50">
             <div class="bg-white p-6 rounded-lg w-full max-w-lg">
-                <h2 class="text-lg font-semibold mb-3">{{ $guruId ? 'Edit Guru' : 'Tambah Data Guru' }}</h2>
+                <h2 class="text-lg font-semibold mb-3">{{ $guru_id ? 'Edit Guru' : 'Tambah Data Guru' }}</h2>
 
                 <form wire:submit.prevent="store">
                     <div class="mb-3">
@@ -82,12 +82,12 @@
                     </div>
 
                     <!-- Old Images -->
-                    @if ($isEditMode && $oldfoto)
+                    @if ($old_foto)
                     <div class="mb-3">
                         <p class="font-semibold mb-1">Foto Lama:</p>
                         <div class="flex flex-wrap gap-2">
                             <div class="relative">
-                                <img src="{{ asset('storage/'. $oldfoto) }}" class="w-20 h-20 object-cover rounded">
+                                <img src="{{ asset('storage/'. $old_foto) }}" class="w-20 h-20 object-cover rounded">
                                 <button type="button" wire:click="removeImage"
                                     class="absolute top-0 right-0 bg-red-600 text-white text-xs px-1 rounded-full">x</button>
                             </div>
@@ -110,7 +110,7 @@
                         <button type="button" wire:click="closeModal"
                             class="bg-gray-400 text-white px-3 py-2 rounded">Batal</button>
                         <button type="submit" class="bg-blue-600 text-white px-3 py-2 rounded">
-                            {{ $isEditMode ? 'Update' : 'Simpan' }}
+                            Simpan
                         </button>
                     </div>
                 </form>

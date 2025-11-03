@@ -16,7 +16,7 @@
           <p class="text-gray-600 dark:text-gray-400 mb-4">
             {{ substr($prakata->isi, 0, 95) }}...
           </p>
-          <a href="#"
+          <a href="{{ url('/prakata') }}"
             class="font-semibold text-primary-600 dark:text-primary-400 hover:underline hover:text-green-400">Lihat
             Detail
             &rarr;</a>
