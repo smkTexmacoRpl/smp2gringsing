@@ -22,7 +22,7 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        View::share(['appName' => 'SMP N 2 Gringsing', 'appName2' => 'Smp-Negeri-2-Gringsing']);
+        View::share(['appName' => 'SMP Negeri 2 Gringsing', 'appName2' => 'Smp-Negeri-2-Gringsing']);
         if (Schema::hasTable('menus')) {
             $menus = Menu::with('children')->whereNull('parent_id')->orderBy('urutan')->get();
             View::share('menus', $menus);
