@@ -4,6 +4,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="{{ asset('assets/images/__logo.png') }}" type="image/png" />
+  <meta name="description"
+    content="{{ $metaDescription ?? 'SMP N 2 Gringsing - Membangun Generasi Unggul Berkarakter' }}" />
+  <meta name="keywords"
+    content="{{ $metaKeywords ?? 'SMPN 2 Gringsing, Sekolah Menengah Pertama, Pendidikan, Generasi Unggul, Karakter' }}" />
+  <meta name="author" content="SMP N 2 Gringsing" />
+  <meta property="og:title" content="{{ $ogTitle ?? 'SMP N 2 Gringsing' }}" />
+  <meta property="og:description" content="{{ $ogDescription ?? 'Membangun Generasi Unggul Berkarakter' }}" />
+  <meta property="og:url" content="{{ url()->current() }}" />
+  <meta property="og:type" content="website" />
+
   <title>{{ $appName2 }}</title>
   @vite('resources/css/app.css')
   @vite('resources/js/app.js')
@@ -11,6 +22,7 @@
 
   <!-- Tailwind CSS v3.4 -->
   @include('layouts.partial.style')
+  @yield('styles')
 
 </head>
 

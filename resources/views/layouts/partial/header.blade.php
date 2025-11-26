@@ -1,7 +1,7 @@
-<header id="header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300">
+<header id="header" class="bg-gray-200 fixed top-0 left-0 w-full z-50 transition-all duration-300">
   <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
     <!-- Logo -->
-    <img src="{{ asset('assets/images/_logo.png') }}" alt="" width="65" height="auto">
+    <img src="{{ asset('assets/images/__logo.png') }}" alt="" width="65" height="auto">
     <a href="{{ route('home') }}"
       class="text-2xl font-bold text-green-800 dark:text-primary-400 hover:text-green-400 dark:hover:text-primary-300 transition-colors">
       {{ strtoupper($appName) }}
@@ -19,7 +19,7 @@
       @foreach ($menus as $menu )
       <li class="group relative">
         <a href="{{ url($menu->url ?? '#') }}"
-          class="hover:text-green-400 text-green-800 dark:hover:text-primary-400 transition-colors flex items-center">{{
+          class="hover:text-green-400 text-green-600 dark:hover:text-primary-400 transition-colors flex items-center ">{{
           $menu->nama
           }}
           @if($menu->children->count())
