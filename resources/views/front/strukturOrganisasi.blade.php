@@ -217,11 +217,10 @@
             <div class="org-node">
                 <div tabindex="0"
                     class="card level-root relative rounded-lg p-4 flex items-center gap-4 border border-black-400 shadow-sm">
-                    <img class="avatar"
-                        src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=200&q=60&auto=format&fit=crop"
+                    <img class="avatar" src="{{ asset('assets/images/user-hijab.png') }}"
                         alt="Avatar Kepala Organisasi" />
                     <div>
-                        <div class="font-semibold text-2xl">Dr. Siti Rahma</div>
+                        <div class="font-semibold text-2xl">Siti Khomariyah, M.Pd.</div>
                         <div class="text-xl text-black-300">Kepala Sekolah</div>
                     </div>
                 </div>
@@ -231,11 +230,9 @@
                     <div class="child org-node w-1/3 min-w-[200px]">
                         <div tabindex="0"
                             class="card level-1 relative rounded-lg p-4 flex items-center gap-3 border border-slate-200 shadow-sm">
-                            <img class="avatar"
-                                src="https://images.unsplash.com/photo-1531123414780-fdb6b6f0b8f5?w=200&q=60&auto=format&fit=crop"
-                                alt="Avatar Wakil" />
+                            <img class="avatar" src="{{ asset('assets/images/user-icon.svg') }}" alt="Avatar Wakil" />
                             <div>
-                                <div class="font-semibold text-2xl">Budi Santoso</div>
+                                <div class="font-semibold text-2xl"></div>
                                 <div class="text-xl text-slate-500">Wakil Kepala</div>
                             </div>
                         </div>
@@ -245,10 +242,9 @@
                             <div class="child org-node w-40">
                                 <div tabindex="0"
                                     class="card relative bg-white rounded-lg p-3 text-center border border-slate-200 shadow-sm">
-                                    <img class="avatar mx-auto"
-                                        src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?w=200&q=60&auto=format&fit=crop"
+                                    <img class="avatar mx-auto" src="{{ asset('assets/images/user-icon.svg') }}"
                                         alt="Avatar Kurikulum" />
-                                    <div class="mt-2 text-sm font-medium">Ayu</div>
+                                    <div class="mt-2 text-sm font-medium"></div>
                                     <div class="text-xs text-slate-500">Kurikulum</div>
                                 </div>
                             </div>
@@ -256,10 +252,9 @@
                             <div class="child org-node w-40">
                                 <div tabindex="0"
                                     class="card relative bg-white rounded-lg p-3 text-center border border-slate-200 shadow-sm bg-red-500">
-                                    <img class="avatar mx-auto"
-                                        src="https://images.unsplash.com/photo-1545996124-1d5b1c6a4b6a?w=200&q=60&auto=format&fit=crop"
+                                    <img class="avatar mx-auto" src="{{ asset('assets/images/user-icon.svg') }}"
                                         alt="Avatar Kesiswaan" />
-                                    <div class="mt-2 text-sm font-medium">Rudi</div>
+                                    <div class="mt-2 text-sm font-medium"></div>
                                     <div class="text-xs text-slate-500">Kesiswaan</div>
                                 </div>
                             </div>
@@ -268,12 +263,11 @@
 
                     <div class="child org-node w-1/3 min-w-[200px]">
                         <div tabindex="0"
-                            class="card relative bg-white rounded-lg p-4 flex items-center gap-3 border border-slate-200 shadow-sm">
-                            <img class="avatar"
-                                src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?w=200&q=60&auto=format&fit=crop"
+                            class="card level-1 relative rounded-lg p-4 flex items-center gap-3 border border-slate-200 shadow-sm">
+                            <img class="avatar" src="{{ asset('assets/images/user-icon.svg') }}"
                                 alt="Avatar Keuangan" />
                             <div>
-                                <div class="font-semibold">Nina Lestari</div>
+                                <div class="font-semibold"></div>
                                 <div class="text-xs text-slate-500">Keuangan</div>
                             </div>
                         </div>
@@ -282,8 +276,7 @@
                             <div class="child org-node w-40">
                                 <div tabindex="0"
                                     class="card relative bg-white rounded-lg p-3 text-center border border-slate-200 shadow-sm">
-                                    <img class="avatar mx-auto"
-                                        src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=200&q=60&auto=format&fit=crop"
+                                    <img class="avatar mx-auto" src="{{ asset('assets/images/user-icon.svg') }}"
                                         alt="Bendahara" />
                                     <div class="mt-2 text-sm font-medium">Tegar</div>
                                     <div class="text-xs text-slate-500">Bendahara</div>
@@ -293,8 +286,7 @@
                             <div class="child org-node w-40">
                                 <div tabindex="0"
                                     class="card relative bg-white rounded-lg p-3 text-center border border-slate-200 shadow-sm">
-                                    <img class="avatar mx-auto"
-                                        src="https://images.unsplash.com/photo-1546525848-3ce03ca516f6?w=200&q=60&auto=format&fit=crop"
+                                    <img class="avatar mx-auto" src="{{ asset('assets/images/user-icon.svg') }}"
                                         alt="Adm" />
                                     <div class="mt-2 text-sm font-medium">Yuni</div>
                                     <div class="text-xs text-slate-500">Administrasi</div>
@@ -305,10 +297,8 @@
 
                     <div class="child org-node w-1/3 min-w-[200px]">
                         <div tabindex="0"
-                            class="card relative bg-white rounded-lg p-4 flex items-center gap-3 border border-slate-200 shadow-sm">
-                            <img class="avatar"
-                                src="https://images.unsplash.com/photo-1541781774459-4a2b2d7b9d9f?w=200&q=60&auto=format&fit=crop"
-                                alt="Avatar Humas" />
+                            class="card level-1 relative  rounded-lg p-4 flex items-center gap-3 border border-slate-200 shadow-sm">
+                            <img class="avatar" src="{{ asset('assets/images/user-icon.svg') }}" alt="Avatar Humas" />
                             <div>
                                 <div class="font-semibold">Fajar Pratama</div>
                                 <div class="text-xs text-slate-500">Humas & IT</div>
@@ -319,8 +309,7 @@
                             <div class="child org-node w-40">
                                 <div tabindex="0"
                                     class="card relative bg-white rounded-lg p-3 text-center border border-slate-200 shadow-sm">
-                                    <img class="avatar mx-auto"
-                                        src="https://images.unsplash.com/photo-1531123414780-fdb6b6f0b8f5?w=200&q=60&auto=format&fit=crop"
+                                    <img class="avatar mx-auto" src="{{ asset('assets/images/user-hijab.png') }}"
                                         alt="Media" />
                                     <div class="mt-2 text-sm font-medium">Ika</div>
                                     <div class="text-xs text-slate-500">Media</div>
@@ -330,8 +319,7 @@
                             <div class="child org-node w-40">
                                 <div tabindex="0"
                                     class="card relative bg-white rounded-lg p-3 text-center border border-slate-200 shadow-sm">
-                                    <img class="avatar mx-auto"
-                                        src="https://images.unsplash.com/photo-1545996124-1d5b1c6a4b6a?w=200&q=60&auto=format&fit=crop"
+                                    <img class="avatar mx-auto" src="{{ asset('assets/images/user-icon.svg') }}"
                                         alt="IT Support" />
                                     <div class="mt-2 text-sm font-medium">Anton</div>
                                     <div class="text-xs text-slate-500">IT Support</div>
