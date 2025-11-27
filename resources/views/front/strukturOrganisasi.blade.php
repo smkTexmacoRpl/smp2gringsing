@@ -334,11 +334,6 @@
         </div>
         <!-- /.org-tree -->
 
-        <footer class="mt-6 text-sm text-slate-500">
-            Tips: Ganti konten <code>img src</code> dan nama pada tiap node untuk
-            membuatnya dinamis. Untuk data besar, hasilkan HTML ini dari loop di
-            backend atau gunakan JS untuk render.
-        </footer>
     </section>
 </main>
 
