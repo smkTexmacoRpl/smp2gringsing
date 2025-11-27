@@ -38,9 +38,9 @@ class ProfilController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function sejarah()
     {
-        //
+        return view('front.sejarah');
     }
 
     /**
