@@ -10,7 +10,7 @@ class GaleriController extends Controller
 {
     public function index()
     {
-        $kategories = Kategori::with('galeries')->get();
+        $kategoris = Kategori::with('galeries')->get();
         // return view('front.galeri', compact('kategories'));
         $galeris = Galeri::with('kategori')->orderBy('created_at', 'desc')->get();
         $galeri = \App\Models\Galeri::all()->map(function ($g) {
@@ -19,6 +19,6 @@ class GaleriController extends Controller
                 'category' => $g->kategori_id,
             ];
         })->values()->toArray();
-        return view('front.galeri', compact('galeri', 'galeris', 'kategories'));
+        return view('front.galeri', compact('galeri', 'galeris', 'kategoris'));
     }
 }

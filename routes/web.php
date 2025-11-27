@@ -32,6 +32,8 @@ Route::get('/prakata', [App\Http\Controllers\ProfilController::class, 'prakata']
 Route::get('/detail_berita', [App\Http\Controllers\BlogController::class, 'index'])->name('detail-berita');
 Route::get('/sejarah', [App\Http\Controllers\ProfilController::class, 'sejarah'])->name('sejarah');
 Route::get('/struktur_organisasi', [App\Http\Controllers\ProfilController::class, 'struktur'])->name('struktur-organisasi');
+Route::get('/guru_tedik', [App\Http\Controllers\ProfilController::class, 'guru'])->name('daftar-guru');
+
 
 
 

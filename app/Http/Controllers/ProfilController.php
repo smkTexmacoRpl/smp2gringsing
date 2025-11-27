@@ -42,6 +42,10 @@ class ProfilController extends Controller
     {
         return view('front.sejarah');
     }
+    public function guru()
+    {
+        return view('front.daftar_guru');
+    }
 
     /**
      * Show the form for editing the specified resource.
